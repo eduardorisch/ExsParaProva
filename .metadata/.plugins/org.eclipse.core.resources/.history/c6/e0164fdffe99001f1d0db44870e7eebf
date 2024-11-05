@@ -1,0 +1,13 @@
+package exsEstudo;
+
+public class ex1 {
+	
+	static String [] palavras;
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

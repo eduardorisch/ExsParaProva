@@ -1,0 +1,17 @@
+package exsEstudo;
+
+public class ex1 {
+	
+	static String [] palavras = new String [4];
+
+	public static void main(String[] args) {
+		leitura();
+		
+		
+	}
+	
+	public static void leitura() {
+		
+	}
+
+}

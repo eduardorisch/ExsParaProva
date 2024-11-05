@@ -1,0 +1,34 @@
+package exsEstudo;
+
+import java.util.Scanner;
+
+public class ex1 {
+
+	static String[] palavras = new String[4];
+
+	public static void main(String[] args) {
+		leitura();
+		encontroPares();
+
+	}
+
+	public static void leitura() {
+		Scanner in = new Scanner(System.in);
+		for (int i = 0; i < palavras.length; i++) {
+			System.out.println("Digite a palavra que quiser: ");
+			palavras[i] = in.next();
+		}
+		in.close();
+	}
+
+	public static void encontroPares() {
+		for (int i = 0; i < palavras.length; i++) {
+			for (int j = palavras[i].length()-1; j > -1; j--) {
+				char palavra = palavras[i].charAt(j);
+				System.out.println(palavra);
+			}
+		}
+
+	}
+
+}

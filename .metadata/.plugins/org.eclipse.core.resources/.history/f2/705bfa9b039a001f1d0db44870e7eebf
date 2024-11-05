@@ -1,0 +1,31 @@
+package exsEstudo;
+
+import java.util.Scanner;
+
+public class ex2 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String palavra, palavraNova;
+		int rota;
+		
+		System.out.println("digite a palavra: ");
+		palavra = in.next();
+		System.out.println("Quantas andadas: ");
+		rota = in.nextInt();
+		
+		palavraNova = rotacionar(palavra, rota);
+		
+	}
+	
+	public static String rotacionar(String palavra, int rota) {
+		int valor;
+		for (int i = 0; i < palavra.length(); i++) {
+			valor = (int)palavra.charAt(i);
+			valor = valor + rota;
+			palavra.charAt(i)= (String)valor;
+		}
+		return ;
+	}
+	
+}

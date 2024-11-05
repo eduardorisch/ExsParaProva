@@ -1,0 +1,51 @@
+package exsEstudo;
+
+import java.util.Scanner;
+
+public class ex1 {
+
+	static String[] palavras = new String[4];
+
+	public static void main(String[] args) {
+		leitura();
+		encontroPares();
+
+	}
+
+	public static void leitura() {
+		Scanner in = new Scanner(System.in);
+		for (int i = 0; i < palavras.length; i++) {
+			System.out.println("Digite a palavra que quiser: ");
+			palavras[i] = in.next();
+		}
+		in.close();
+	}
+
+	public static void encontroPares() {
+		int contador = 0;
+		boolean ePar = false;
+		for (int i = 0; i < palavras.length-1; i++) {
+			contador=0;
+			for (int j = palavras[i].length()-1; j > -1; j--) {
+				char palavra = palavras[i].charAt(j);
+				if(palavras[i+1].length()==palavras[i].length()) {
+					if(palavras[i+1].charAt(contador)==palavra) {
+						ePar=true;
+					}
+					else {
+						ePar=false;
+					}
+				}
+				else {
+					break;
+				}
+				contador++;
+			}
+			if(ePar) {
+				System.out.print("A palavra " + palavras[i] + " é par inverso de " + palavras[i+1] + "\n");
+			}
+		}
+
+	}
+
+}

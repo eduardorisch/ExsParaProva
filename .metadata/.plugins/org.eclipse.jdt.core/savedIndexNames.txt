@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Keentari\OneDrive\Área de Trabalho\exBackend\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2139079698.index
+2063084705.index
